@@ -1,0 +1,212 @@
+
+html, body {
+    margin: 0;
+  }
+
+.Site{
+
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 90px 300px 300px 300px 130px; 
+    grid-gap: 0px 0px;
+    grid-template-areas: 
+      "Header Header Header Header"
+      "mainContents mainContents mainContents mainContents"
+      "mainContents mainContents mainContents mainContents"
+      "mainContents mainContents mainContents mainContents"   
+      "Footer Footer Footer Footer"; 
+}
+
+/* CSS Header */
+.Header{
+    background-color: #847577;
+    background-size:cover;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "Logo HCenter HCenter searchBar";
+    grid-area: Header;
+}
+
+.webLogo{
+    grid-area: Logo;
+}
+.mainHead{
+    grid-area: HCenter;
+    margin-right: 500px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    text-align: center;    
+}
+
+.searchBar{
+    grid-area: searchBar;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+.searchBar input {
+    float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 30px;
+  margin-right: 16px;
+  font-size: 17px;
+}
+
+/* main Contents*/
+.mainContent{
+   background-color: #E5E6E4;
+   text-align: center;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 100px 150px 150px 150px; 
+    grid-gap: 0px 0px;
+    grid-template-areas: 
+    "ListHeader ListHeader ListHeader"
+    "Content1 Content1 Content1"
+    "Content2 Content2 Content2"
+    "Content3 Content3 Content3"; 
+    grid-area: mainContents;
+}
+
+.mainHeader{
+    display: grid;
+    background-color: #A6A2A2;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    color: white;
+    grid-area: ListHeader;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100px;
+    grid-template-areas: 
+    "listIcon listStatus listInfo listPlayers";
+}
+
+/*List header ============================================================================================*/
+#listName{
+    grid-area: listIcon;
+    color: white;
+}
+#listStatus{
+    grid-area: listStatus;
+    color: white;
+}
+#listInfo{
+    grid-area: listInfo;
+    color: white;
+}
+#listPlayers{
+    grid-area: listPlayers;
+    color: white;
+}
+
+/* First Status ===========================================================================================*/
+#topServ1{
+    grid-area: Content1;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 0px;
+    padding: 50px;
+    color: white;
+    background-color: #636564;
+    display: grid;
+    grid-template-columns: 200px 50px 500px 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "Icon svStatus1 serv1Name Players1";
+}
+#iconOne{
+    grid-area: Icon;
+    
+}
+#topServ1players{
+    grid-area: Players1;
+}
+
+.descriptionOne{
+    grid-area: serv1Name;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#statusOne{
+    margin-right: 250px;
+    grid-area: svStatus1;
+}
+
+/* Second Status ===========================================================================================*/
+#topServ2{
+    grid-area: Content2;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 10px;
+    padding: 50px;
+    color: white;
+    background-color: #636564;
+    display:grid;
+    grid-template-columns: 200px 50px 500px 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "Icon svStatus2 serv2Name Players2";
+}
+
+#topServ2players{
+    grid-area: Players2;
+}
+
+.descriptionTwo{
+    grid-area: serv2Name;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+#statusTwo{
+    grid-area: svStatus2;
+}
+
+/* Third Status ===========================================================================================*/
+#topServ3{
+    grid-area: Content3;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 10px;
+    padding: 50px;
+    color: white;
+    background-color: #636564;
+    display:grid;
+    grid-template-columns: 200px 50px 500px 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "Icon svStatus3 serv3Name Players3";
+}
+
+
+
+.descriptionThree{
+    grid-area: serv3Name;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+#topServ2players{
+    grid-area: Players3;
+}
+
+#statusThree{
+    grid-area: svStatus3;
+}
+
+/* Footer Content*/
+.Footer{
+    
+    background-color: #847577;
+    color: white;
+    text-align: center;
+    grid-area: Footer;
+}
